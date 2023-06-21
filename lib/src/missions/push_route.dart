@@ -11,7 +11,8 @@ class PushRoute<S extends AstroState> extends LandingMission<S> {
 
   @override
   S landingInstructions(S state) {
-    DefaultNavigationState navigation = (state as dynamic).navigation;
+    DefaultNavigationState navigation =
+        (state as dynamic).navigation as DefaultNavigationState;
     var newNavigation =
         navigation.copyWith(stack: [pageState, ...navigation.stack]);
     return (state as dynamic).copyWith(navigation: newNavigation) as S;

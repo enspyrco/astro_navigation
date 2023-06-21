@@ -8,7 +8,8 @@ class RemoveCurrentRoute<S extends AstroState> extends LandingMission<S> {
 
   @override
   S landingInstructions(S state) {
-    DefaultNavigationState navigation = (state as dynamic).navigation;
+    DefaultNavigationState navigation =
+        (state as dynamic).navigation as DefaultNavigationState;
     var newNavigation =
         navigation.copyWith(stack: [...navigation.stack]..removeAt(0));
     return (state as dynamic).copyWith(navigation: newNavigation) as S;

@@ -20,17 +20,18 @@ export 'src/widgets/pages_navigator.dart';
 class DefaultPageGenerator implements PageGenerator {
   DefaultPageGenerator();
 
-  final Map<Type, MaterialPage Function(PageState)> _map = {};
+  final Map<Type, MaterialPage<dynamic> Function(PageState)> _map = {};
 
   @override
   void add({
     required Type type,
-    required MaterialPage Function(PageState) generator,
+    required MaterialPage<dynamic> Function(PageState) generator,
   }) =>
       _map[type] = generator;
 
   @override
-  MaterialPage applyTo(PageState state) => _map[state.runtimeType]!(state);
+  MaterialPage<dynamic> applyTo(PageState state) =>
+      _map[state.runtimeType]!(state);
 }
 
 void initializeNavigationPlugin<S extends AstroState>() {}
