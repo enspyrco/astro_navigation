@@ -1,6 +1,6 @@
-import 'package:astro_types/core_types.dart';
-import 'package:astro_types/navigation_types.dart';
-import 'package:astro_types/state_types.dart';
+import 'package:types_for_perception/core_types.dart';
+import 'package:types_for_perception/navigation_types.dart';
+import 'package:types_for_perception/state_types.dart';
 
 import '../state/sections/navigation_state.dart';
 

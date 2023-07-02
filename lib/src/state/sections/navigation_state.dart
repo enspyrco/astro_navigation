@@ -1,6 +1,6 @@
-import 'package:astro_types/json_types.dart';
-import 'package:astro_types/navigation_types.dart';
-import 'package:astro_types/state_types.dart';
+import 'package:types_for_perception/json_types.dart';
+import 'package:types_for_perception/navigation_types.dart';
+import 'package:types_for_perception/state_types.dart';
 import 'package:flutter/foundation.dart';
 
 /// Part of the DefaultNavigationState - includes the stack of PageState objects.

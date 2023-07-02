@@ -10,9 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  astro_types: ^0.0.0-a1
-  astro_core: ^0.0.0-a1
-  astro_locator: ^0.0.0-a1
+  
+  core_of_perception: ^0.0.0-a1
+  locator_for_perception: ^0.0.0-a1
+  types_for_perception: ^0.0.0-a1
 
 dev_dependencies:
   flutter_test:
