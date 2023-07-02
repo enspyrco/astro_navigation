@@ -1,4 +1,4 @@
-library astro_navigation;
+library navigation_for_perception;
 
 import 'package:astro_locator/astro_locator.dart';
 import 'package:astro_types/core_types.dart';

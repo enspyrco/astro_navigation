@@ -1,6 +1,6 @@
-# astro_navigation
+# navigation_for_perception
 
-*An astro principle for navigation.*
+*A perception principle for navigation.*
 
 ## Features
 
